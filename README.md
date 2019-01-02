@@ -1,7 +1,7 @@
 
-[![CircleCI](https://circleci.com/gh/jeluard/clj-ethereum.svg?style=svg)](https://circleci.com/gh/jeluard/clj-ethereum)
+[![CircleCI](https://circleci.com/gh/jeluard/cljc-ethereum.svg?style=svg)](https://circleci.com/gh/jeluard/cljc-ethereum)
 
-[![cljdoc badge](https://cljdoc.org/badge/jeluard/clj-ethereum)](https://cljdoc.org/d/jeluard/clj-ethereum/CURRENT)
+[![cljdoc badge](https://cljdoc.org/badge/jeluard/cljc-ethereum)](https://cljdoc.org/d/jeluard/cljc-ethereum/CURRENT)
 
 A high-level Clojure(Script) ethereum JSON-RPC client
 
