@@ -1,0 +1,4 @@
+^{:watch-dirs   ["src" "test" "examples/src"]
+  :log-file     "figwheel-main.log"
+  :log-level    :info}
+{:main ethereum.examples}
