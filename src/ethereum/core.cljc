@@ -38,6 +38,8 @@
 
 (defmethod marshall :hash [_ value] value)
 
+(defmethod marshall :default [type value] (throw (str "Don't know how to marshall" type "::" value)))
+
 (defmulti unmarshall
   "JSON-RPC data to Clojure"
   (fn [type value]
@@ -62,9 +64,9 @@
       "false" false
       nil)))
 
-(defmethod unmarshall :default [type value] (throw (str type "::" value)))
-
 (defmethod unmarshall :quantity [_ value] (when (string? value) (codec/hex->quantity value)))
+
+(defmethod unmarshall :default [type value] (throw (str "Don't know how to unmarshall" type "::" value)))
 
 (defn- request-callback [cb type value]
   (let [{:keys [result error]} value]
